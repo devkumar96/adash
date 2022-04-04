@@ -31,7 +31,7 @@ trait FaqTrait {
 	    return view('admin.faqs.create');
 	}
 
-	public function store(Request $request, FaqAction $faq)
+	public function store(Request $request, FaqAction $action)
 	{
 		$this->authorize('faqs_create');
 	    $request->validate([
